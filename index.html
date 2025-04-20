@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <p id="code"></p>
+     <script>
+        function stringHash(str) {
+          let hash = 0;
+          for (let i = 0; i < str.length; i++) {
+            const char = str.charCodeAt(i);
+            hash = (hash << 5) - hash + char;
+            hash |= 0; // Convert to 32bit integer
+          }
+          return hash;
+        }
+        const url = window.location.pathname;
+        const parts = url.split('/');
+        const lastPart = parts[parts.length - 1];
+        var codes = [
+{c: 977361766, m:"jt"},
+{c: -764767732, m:"dr"},
+{c: 531687156, m:"ac"},
+{c: 734009688, m:"qg"},
+{c: -123410361, m:"na"},
+{c: 1368874725, m:"rq"},
+{c: 1688526789, m:"mw"},
+{c: -1766666381, m:"es"},
+{c: 105828741, m:"ad"},
+{c: 1003439689, m:"ln"},
+{c: -385905580, m:"uo"},
+{c: -1027738894, m:"bo"},
+{c: -167873050, m:"ox"},
+{c: 1111593778, m:"rj"},
+{c: 61492940, m:"bf"},
+{c: 1659610685, m:"mh"},
+{c: 417301088, m:"xc"},
+{c: -757386895, m:"fb"},
+{c: 1203996742, m:"tg"},
+{c: -965916882, m:"ts"},
+{c: -626847875, m:"el"},
+{c: 192821241, m:"iz"},
+{c: -1485266338, m:"ri"},
+{c: 2051636175, m:"yh"},
+{c: 145363864, m:"bx"},
+{c: -1969424846, m:"nb"},
+{c: 1576922370, m:"uo"},
+{c: -1193182912, m:"af"},
+{c: 1237207736, m:"jk"},
+{c: -1870051333, m:"fi"},
+{c: -1747941657, m:"dw"},
+{c: 379072435, m:"tu"},
+{c: -113193464, m:"wg"},
+{c: 1826581274, m:"en"},
+{c: -313275191, m:"qe"},
+{c: -839916943, m:"jc"},
+{c: -1091347745, m:"og"},
+{c: -671330369, m:"uo"},
+{c: 1159127496, m:"fx"},
+{c: -1083646513, m:"mh"},
+{c: -1398226383, m:"lt"},
+{c: -136342266, m:"dx"},
+{c: -649004764, m:"kl"},
+{c: 1487257869, m:"il"},
+{c: -709871880, m:"ei"},
+{c: -411751668, m:"wk"},
+{c: -1998018114, m:"tf"},
+{c: -45250514, m:"xg"},
+{c: 91564972, m:"gg"},
+{c: 1940634432, m:"dg"},
+{c: 1789780561, m:"fu"},
+{c: -1632134159, m:"dp"},
+{c: -49750539, m:"mj"},
+{c: -1097859324, m:"uw"},
+{c: -231338853, m:"am"},
+{c: -1360167321, m:"bq"},
+{c: -818904796, m:"gi"},
+{c: 1506809750, m:"pu"},
+{c: -720165840, m:"ue"},
+{c: -1612625264, m:"sc"},
+{c: 480466120, m:"ip"},
+{c: -811667828, m:"my"},
+{c: -289359186, m:"up"},
+{c: -1560710514, m:"ne"},
+{c: -1705629782, m:"jh"},
+{c: -918077472, m:"xm"},
+{c: -838715808, m:"oz"},
+{c: -1892419077, m:"hh"},
+{c: -1019992103, m:"fd"},
+{c: -199911446, m:"lj"},
+{c: -2011567250, m:"ac"},
+{c: 414606227, m:"cx"},
+{c: 1999951185, m:"hy"},
+{c: 2027042316, m:"fm"},
+{c: -1324915838, m:"ai"},
+{c: 2035624154, m:"ss"},
+{c: -2085635435, m:"by"},
+{c: -974119556, m:"mb"},
+{c: 1828938206, m:"ok"},
+{c: -2069851480, m:"zm"},
+{c: 1240574228, m:"wx"},
+{c: -133582130, m:"ze"},
+{c: 2087246862, m:"xg"},
+{c: -257288793, m:"ag"},
+{c: -1083949500, m:"xw"},
+{c: 1934476358, m:"fz"},
+{c: 1364370903, m:"od"},
+{c: -655727173, m:"ol"},
+{c: -986826982, m:"gx"},
+{c: -1818562160, m:"ui"},
+{c: -1560648389, m:"dm"},
+{c: -1731883598, m:"tp"},
+{c: 150341798, m:"sf"},
+{c: 1677009739, m:"zp"},
+{c: -550865727, m:"yb"},
+{c: 8338408, m:"cg"},
+{c: -1482193769, m:"rt"},
+{c: 1798069435, m:"xw"},
+{c: 37837224, m:"lx"},
+        ];
+       var finish = false
+        for(i of codes){
+          if(stringHash(lastPart) == i.c){
+            finish = true;
+            var index = codes.indexOf(i);
+            if(index == 0){
+              document.getElementById("code").innerText = "Hello and welcome! This website is a fun challenge for the crunchlabs encryption box. In this challenge, you will have to face 100 decryptions and if you make a mistake, you go all the way back to this page. Good luck. Your first task is to decode jcbrsgkzpduh in key red s, blue j and put the answer at the end of the website";
+            } else if(index == 1){
+              document.getElementById("code").innerText = "Good job! Now decode your answer in key d, r and there will be a twist on #25";
+            } else if(index == 24){
+              document.getElementById("code").innerText = "Nice work making it this far! For the next 25 encryptions, you will now rotate the blue face clockwise AFTER each letter. See you at 50!";
+            } else if(index == 49){
+              document.getElementById("code").innerText = "Wow! Twist time! this time, start on the decoding side but after each letter, flip the whole barrel so you toggle between encoding and decoding! Hah! Let's see you get to the next twist at 75! (p.s. you can stop rotating the blue side)"
+            } else if(index == 74){
+              document.getElementById("code").innerText = "Good job! You made it to the final twist! now this will be like the first twist, but different, after each letter, you will set the blue side to the LAST DECODED LETTER. See you on the other side at 100!";
+            } else if(index == 99){
+              document.getElementById("code").innerText = "You did it! You finnished all 100 challenges! I. Am. Impressed! You are officially a master decoder!";
+            } else {
+              document.getElementById("code").innerText = "Next key is " + i.m;
+            }
+          }
+        }
+       if(!finish){
+         window.location.replace("encryptionStudios.github.io/jcbrsgkzpduh");
+       }
+     </script>
+  </body>
+</html>
